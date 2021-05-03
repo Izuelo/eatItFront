@@ -38,18 +38,18 @@
                 <div
                   style="padding-top:16px"
                 >
-                  Name: Mojesuperimie
+                  Name: Adam
                 </div>
                 <div
                   style="padding-top:16px"
                 >
-                  Last name: Placeholder
+                  Last name: Nowak
                 </div>
               </div>
               <div
                 style="padding-top:16px;padding-bottom: 16px"
               >
-                E-mail: nacokomumail@gmail.com
+                E-mail: adam.nowak123@gmail.com
               </div>
             </v-col>
           </v-row>
@@ -73,12 +73,21 @@
                 >
                   mdi-heart
                 </v-icon>
-                Favorites
+                Favourites
               </v-tab>
             </v-col>
             <v-col
               cols="4"
-            />
+            >
+              <v-tab>
+                <v-icon
+                  color="yellow"
+                >
+                  mdi-star
+                </v-icon>
+                Rated
+              </v-tab>
+            </v-col>
             <v-col
               cols="4"
             >
@@ -88,9 +97,9 @@
                 <v-icon
                   color="blue"
                 >
-                  mdi-book
+                  mdi-comment
                 </v-icon>
-                About me
+                Comments
               </v-tab>
             </v-col>
           </v-row>
@@ -105,7 +114,7 @@
         <v-row justify="center">
           <v-col align-self="center">
             <h1 style="text-align: center">
-              Favourites Restaurants
+              Favourite Restaurants
             </h1>
           </v-col>
         </v-row>

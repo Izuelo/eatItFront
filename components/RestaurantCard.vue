@@ -61,22 +61,25 @@
             >
               <v-col
                 style="display: flex;justify-content: center;"
-                cols="6">
-                Rating: {{restaurant.rating}}
+                cols="6"
+              >
+                Rating: {{ restaurant.rating }}
               </v-col>
               <v-col
                 style="display: flex;justify-content: center;"
-                cols="6">
-                Votes: {{restaurant.votes}}
+                cols="6"
+              >
+                Votes: {{ restaurant.votes }}
               </v-col>
             </v-row>
           </v-card>
         </div>
-        <v-divider></v-divider>
+        <v-divider />
         <div
-        style="display: flex;justify-content: space-around;padding: 16px">
-          <div>Address: {{restaurant.address}} </div>
-          <div>Open hours: {{restaurant.openHours}} </div>
+          style="display: flex;justify-content: space-around;padding: 16px"
+        >
+          <div>Address: {{ restaurant.address }} </div>
+          <div>Open hours: {{ restaurant.openHours }} </div>
         </div>
         <div id="map-wrap" style="height: 300px; width: 100%;margin: 20px 0">
           <client-only>

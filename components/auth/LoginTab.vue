@@ -11,15 +11,19 @@
     >
       <v-text-field
         v-model="userAcc.username"
-        :counter="10"
         :rules="nameRules"
-        label="Name"
+        label="E-mail"
         required
       />
       <v-text-field
         v-model="password"
+        :append-icon="show3 ? 'mdi-eye' : 'mdi-eye-off'"
+        :type="show3 ? 'text' : 'password'"
+        name="input-10-2"
         label="Password"
-        required
+        hint="At least 8 characters"
+        class="input-group--focused"
+        @click:append="show3 = !show3"
       />
       <v-btn
         :disabled="!valid"
@@ -31,18 +35,12 @@
       </v-btn>
 
       <v-btn
+        style="position: absolute; left: 350px;"
         color="error"
         class="mr-4"
         @click="reset"
       >
         Reset Form
-      </v-btn>
-
-      <v-btn
-        color="warning"
-        @click="resetValidation"
-      >
-        Reset Validation
       </v-btn>
     </v-form>
   </v-card>
@@ -64,6 +62,7 @@ export default {
       v => !!v || 'E-mail is required',
       v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
     ],
+    show3: false,
     select: null,
     password: '',
     checkbox: false,
@@ -95,9 +94,6 @@ export default {
     },
     reset () {
       this.$refs.form.reset()
-    },
-    resetValidation () {
-      this.$refs.form.resetValidation()
     }
   }
 }

@@ -20,7 +20,7 @@
             <v-select
               v-model="chCuisine"
               :items="cuisines"
-              label="Rodzaj kuchni"
+              label="Chose a cuisine"
               solo
             />
           </div>
@@ -35,7 +35,7 @@
             <v-select
               v-model="chCity"
               :items="cities"
-              label="Miasto"
+              label="City"
               solo
             />
           </div>
@@ -49,7 +49,7 @@
             <v-select
               v-model="chRating"
               :items="items"
-              label="Ocena użytkowników"
+              label="User score"
               solo
             />
           </div>

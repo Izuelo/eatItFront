@@ -89,7 +89,7 @@ export default {
         {
           icon: 'mdi-trophy-award',
           title: 'Top rated',
-          to: '/'
+          to: '/#top'
         },
         {
           icon: 'mdi-account',
@@ -105,6 +105,11 @@ export default {
           icon: 'mdi-magnify',
           title: 'Search',
           to: '/search'
+        },
+        {
+          icon: 'mdi-logout',
+          title: 'Logout',
+          to: '/inspired'
         }
       ],
       miniVariant: false,
